@@ -23,6 +23,15 @@ Follow these steps to reallocate space from the default `local-lvm`:
    lvresize -l +100%FREE /dev/pve/root
    resize2fs /dev/mapper/pve-root
 
+ ## TrueNAS Setup  
+1. **Add data storage to VMs(TrueNAS)
+   Go to Datacenter>pve>disks and wipe the required disk. Initialize it as GPT
+   Go to LVM-thin and create the thin pool. Add the disk to LVM-thin
+   Go to created VM(TrueNAS)>Hardware and add a hard disk. Check details and add the required storage disk
+
+2. **Set static IP for TrueNAS
+   Go to TrueNAS WebGUI>Network>Interfaces and add the required static IP using the add button
+
 
 
 
