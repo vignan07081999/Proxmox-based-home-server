@@ -43,6 +43,13 @@ Follow these steps to reallocate space from the default `local-lvm`:
    Set the Host and container the following
    ```bash
    /dev/ttyUSB0
+
+## CUPS Setup  
+1. **Install cups and configure
+   https://www.linuxbabe.com/ubuntu/set-up-cups-print-server-ubuntu-bonjour-ipp-samba-airprint
+2. *Install brlaser printer driver
+   ```bash
+   sudo apt install printer-driver-brlaser
    
    
 
