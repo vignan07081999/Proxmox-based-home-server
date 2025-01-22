@@ -32,6 +32,20 @@ Follow these steps to reallocate space from the default `local-lvm`:
 2. **Set static IP for TrueNAS
    Go to TrueNAS WebGUI>Network>Interfaces and add the required static IP using the add button
 
+ ## casaos Setup  
+1. **Add usb devices(printer and 3D printer) to casaos vm before installing casao os on ubuntu server
+2. **Install casaos
+   
+ ## Octoprint Setup  
+1. **Add usb devices to Octoprint docker container
+   Go to Casaos>Octoprint>Settings
+   Add a device
+   Set the Host and container the following
+   ```bash
+   /dev/ttyUSB0
+   
+   
+
 
 
 
